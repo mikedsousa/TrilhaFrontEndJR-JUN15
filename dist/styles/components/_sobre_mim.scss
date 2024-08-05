@@ -1,0 +1,12 @@
+@use '../abstracts/variables';
+
+.sobre-mim {
+
+  margin: 2rem 1rem;
+
+  &__imagem {
+    width: 50vw;
+    padding: 0.1rem;
+    border-radius: 50%;
+  }
+}

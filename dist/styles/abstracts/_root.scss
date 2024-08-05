@@ -1,0 +1,13 @@
+@use '../abstracts/variables';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: variables.$cinza-escuro;
+  color: variables.$branco;
+  font-family: variables.$fonte;
+}
