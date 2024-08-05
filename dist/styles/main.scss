@@ -1,9 +1,10 @@
-// Base
-@use './base/typography';
-
 // Abstracts
 @use './abstracts/root';
+
+// Base
+@use './base/typography';
 
 // Components
 @use './components/cabecalho';
 @use './components/sobre_mim';
+@use './components/motivacao';

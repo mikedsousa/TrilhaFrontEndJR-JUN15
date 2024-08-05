@@ -1,0 +1,14 @@
+@use '../abstracts/variables';
+
+.motivacao {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  color: variables.$preto;
+  background-color: variables.$branco;
+}
+
+.conclusao {
+  margin: 1rem;
+}
