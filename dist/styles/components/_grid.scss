@@ -7,6 +7,7 @@
   padding: 1rem;
   color: variables.$preto;
   background-color: variables.$branco;
+  border-block: 1px solid variables.$vermelho;
 
   &__icons {
     margin-block: 1rem;
@@ -14,6 +15,11 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
     text-align: center;
+
+    & img {
+      max-width: 80px;
+      margin: 0 auto;
+    }
   
     & i {
       font-size: 2.5rem;
