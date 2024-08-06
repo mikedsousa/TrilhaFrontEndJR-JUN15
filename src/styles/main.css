@@ -18,8 +18,15 @@ span {
 
 .cabecalho {
   display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.cabecalho__container {
+  display: flex;
   align-items: center;
-  margin: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 .cabecalho i {
   font-size: 20px;
@@ -30,15 +37,33 @@ span {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin: 1rem;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 1000px;
 }
 .sobre-mim__imagem {
   width: 50vw;
+  max-width: 300px;
   padding: 0.1rem;
   border-radius: 50%;
   margin-top: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .cabecalho__sobre {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cabecalho__sobre div h1 {
+    margin-bottom: 1rem;
+  }
+  .cabecalho__sobre p {
+    max-width: 600px;
+  }
+}
 .grid {
   display: flex;
   flex-direction: column;
@@ -47,6 +72,11 @@ span {
   color: #000000;
   background-color: #ffffff;
   border-block: 1px solid #e53939;
+  margin: 1rem auto;
+}
+.grid__container {
+  max-width: 700px;
+  margin: 0 auto;
 }
 .grid__icons {
   margin-block: 1rem;
@@ -54,6 +84,7 @@ span {
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   text-align: center;
+  width: 100%;
 }
 .grid__icons img {
   max-width: 80px;
@@ -62,6 +93,12 @@ span {
 .grid__icons i {
   font-size: 2.5rem;
   color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .grid__icons {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

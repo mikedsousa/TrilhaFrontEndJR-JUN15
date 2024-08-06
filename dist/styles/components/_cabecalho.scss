@@ -2,8 +2,16 @@
 
 .cabecalho {
   display: flex;
-  align-items: center;
-  margin: 1rem;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1000px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
 
   i {
     font-size: 20px;

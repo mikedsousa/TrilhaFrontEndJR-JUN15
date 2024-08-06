@@ -8,6 +8,12 @@
   color: variables.$preto;
   background-color: variables.$branco;
   border-block: 1px solid variables.$vermelho;
+  margin: 1rem auto;
+
+  &__container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
 
   &__icons {
     margin-block: 1rem;
@@ -15,6 +21,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
     text-align: center;
+    width: 100%;
 
     & img {
       max-width: 80px;
@@ -25,5 +32,12 @@
       font-size: 2.5rem;
       color: variables.$preto;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid__icons {
+    grid-template-columns: repeat(5, 1fr);
+
   }
 }
